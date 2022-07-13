@@ -15,11 +15,13 @@ function App() {
     </thead>
     <tbody>
     {contacts.map((contact) => {
+      return (
       <tr>
-        <td>{contact.pictureUrl}</td>
+        <td> <img src={contact.pictureUrl}/></td>
         <td>{contact.name}</td>
         <td>{contact.popularity}</td>
       </tr>
+      );
   })}
     </tbody>
 </table>
